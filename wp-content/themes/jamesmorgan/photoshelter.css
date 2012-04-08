@@ -1,0 +1,725 @@
+/*---[ Details ]---------------------------------------
+Site: jamesmorganphotography.co.uk
+Author: Craig Butcher - http://craigbutcher.net/webtailor
+Contact: butcher.craig@gmail.com
+Date Created: 13/09/2010
+Date Modified: 29/12/2010
+-------------------------------------------------------*/
+
+/* Guide
+ *
+ * [ 00 - Reset ]
+ * [ 01 - Body ]
+ * [ 02 - Construction ]
+ * [ 03 Headers, paragraphs ] 
+ * [ 04 Anchors ]
+ * [ 05 Listings ]
+ * [ 06 Misc ]
+ * [ 07 Social Media ]
+ *
+ * CSS for Photoshelter
+ * 
+*/
+
+/* [ 00 Reset ] */
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+focus {outline: 0;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+
+/* [ 01 Body ] */
+
+body {
+	font: 62.5% "Lucida Grande", Tahoma, Arial, georgia, sans-serif;
+	background: url(images/back-grad.gif) repeat-x #000;
+	color: #aaa;
+}
+
+/* [ 02 Construction ] */
+
+/* Main construction */
+
+
+#wrapper {
+	margin: 30px auto 20px auto;
+	width: 960px;
+}
+
+#header {
+	overflow: hidden;
+	margin: 0 0 20px;
+}
+
+#content {
+	overflow: hidden;
+	position: relative;
+	margin: -25px 0 0;
+}
+
+.breadcrumb {
+	clear:both;
+	font-size:1.4em;
+	text-transform:uppercase;
+	margin: 4px 0 14px 0;
+	width: 860px;
+}
+
+.homeLink {
+	display: block;
+    height: 44px;
+    position: relative;
+    width: 395px
+}
+
+#box { float: left; }
+
+#navportfolio {
+	margin: 20px 0;
+	width: 600px;
+}
+
+.syn { padding: 3px 0 15px 0; }
+
+.singlesImg:hover {
+	background: #1c1c1c;
+	border: 1px solid #222;
+}
+
+.singlesImg {
+	float:left;
+	height:235px;
+	padding: 50px 18px 18px 18px;
+	width:200px;
+	position: relative;
+	margin: 1px;
+	border: 1px solid transparent;
+}
+
+#nav {
+	float: right;
+	width: 255px;
+	margin: 62px 0px 0;
+}
+
+#about {
+	clear:both;
+	margin:15px 0;
+	width:336px;
+}
+
+.clients {
+	border-left:1px solid;
+	border-top:1px solid;
+	margin:10px 11px 0 0;
+	overflow:hidden;
+}
+
+#footer {
+	margin: 20px 0;
+	overflow: hidden;
+}
+
+
+/* [ 03 Headers, paragraphs, texts ] */
+
+#box h1 {
+	background: url('images/jamesmorgan.png') no-repeat;
+	text-indent: -99999px;
+	height: 41px;
+	width: 435px;
+	margin: 10px 0 0 0;
+	opacity: 0.7;
+	filter:alpha(opacity=0.7);
+}
+
+#content h2 {
+	font-size: 1.4em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.singlesImg h3 {
+	bottom:50px;
+	left:0;
+	position:absolute;
+	text-align:center;
+	text-transform:uppercase;
+	width:100%;
+}
+
+#current { text-decoration: underline; }
+
+#footer p {
+	font-size: 1em;
+	float: left;
+	margin: 3px 0;
+}
+
+/* [ 04 Anchors ] */
+
+a.strCollapse {
+	display: block;
+	font-size:1.2em;
+	margin:10px 0;
+	text-align:right;
+	width:100%;
+}
+
+#header a { padding: 0 }
+#header a:hover { background: none;  }
+
+a {
+	text-decoration: none;
+	outline: none;
+	color: #aaa;
+}
+
+#navportfolio a { padding: 4px; letter-spacing: 1px; }
+#navportfolio a:link, a:visit { color: #aaa;}
+#navportfolio a:hover { background: #444; color: #fff; }
+#navportfolio a:active { background: #fff; color: #444;}
+
+#nav a { color:#aaa;}
+#nav a { padding: 4px; letter-spacing: 1px;}
+#nav a:link, a:visit { color: #aaa;}
+#nav a:hover { background: #444; color: #fff; }
+#nav a:active { background: #fff; color: #444;}
+
+.navigation a { color:#aaa; letter-spacing: 1px;}
+.navigation a:link, a:visit { color: #aaa;}
+.navigation a:hover { background: #444; color: #fff; }
+.navigation a:active { background: #fff; color: #444; }
+
+.breadcrumb a { color:#aaa;}
+.breadcrumb a:link, a:visit { color: #aaa;}
+.breadcrumb a:hover { background: #444; color: #fff; }
+.breadcrumb a:active { background: #fff; color: #444; }
+
+a.galleryLink { color: #aaa; }
+a.galleryLink:link { color: #aaa; }
+a.galleryLink:visit { color: #aaa; }
+a.galleryLink:hover { text-decoration: underline; }
+
+.add_to_cart_link {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: #444;
+    clear: both;
+    color: #fff;
+    float: left;
+    margin: 20px 0;
+    padding: 7px;
+    text-align: center;
+    width: 129px;
+}
+
+.add_to_cart_link:hover {
+    background: #666;
+}
+
+.add_to_cart_link:active {
+	background: #888;
+}
+
+
+
+
+.clients li a {
+	width: 200px;
+	height: 200px;
+}
+
+.clients li a:hover {
+	opacity: 1;
+	filter:alpha(opacity=1);
+}
+
+/* [ 05 Listing ] */
+
+.breadcrumb li { float: left; }
+
+#navportfolio li {
+	font-size: 1em;
+	text-transform: uppercase;
+	display: inline;
+	padding: 0 15px -15px 0;
+}
+
+#links { display: inline; }
+
+#links li {
+	border-right: 1px solid #aaa;
+	margin: 0 10px 0 0;
+	padding: 0 10px 0 0;
+}
+
+#links li:last-child {border: none;}
+
+#nav li {
+	display: inline;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: 0 0 0 17px;
+}
+
+#about li {
+	display:block;
+	float:left;
+	font-size:1.2em;
+	margin:0 12px 0 0;
+}
+
+.clients li {
+	background:#fff;
+	border-bottom:1px solid;
+	border-right:1px solid;
+	float:left;
+	height:100px;
+	width:157px;
+	opacity: 0.95;
+	filter:alpha(opacity=95);
+}
+
+.clients li:hover {
+	opacity: 1;
+	filter:alpha(opacity=1);
+}
+
+.clients li img {
+	display: block;
+	margin: 0 auto;
+}
+
+
+/* [ 06 Misc ] */
+
+.aligncenter {
+	display: block;
+	margin: 0 20px;
+}
+object { margin: 0 auto; display: block; }
+.imageWidget img { margin: 0 auto ! important; }
+ul.thumbs li table td.slide { height:160px; width:200px; }
+
+
+/* [ 07 Photoshelter ] */
+
+ul.thumbs {
+	width: 955px;
+	overflow: hidden;
+}
+
+ul.thumbs li {
+	border:1px solid transparent;
+	height:285px;
+	margin: 10px 0;
+	padding:8px 13px;
+	width:210px;
+}
+
+ul.thumbs li:hover {
+	background: #1c1c1c;
+	border: 1px solid #222;
+}
+
+#strKeyCollapseFull_G_DESCRIPTION, #strKeyCollapseTrunc_G_DESCRIPTION { font-size: 1.2em; }
+
+UL.thumbs LI TABLE TD { width: 200px; }
+
+UL.thumbs LI TABLE TD.slide {
+	width: 200px;
+	height: 200px;
+}
+
+.navPhotoshelter {
+	clear:both;
+	font-size: 1.2em;
+	margin: 0 0 10px 0;
+	overflow: hidden;
+	width:600px;
+}
+
+.add_to_lightbox_link {
+	display:block;
+	padding:10px 0 0;
+}	
+
+#showBox {
+	float:right;
+	font-size:1.3em;
+	width:235px;
+}
+
+
+
+#nav {
+	float: right;
+	width: 305px;
+	[if SafMob]width: 350px;
+	margin: 71px 0px 0;
+}
+
+#galleryContent { margin: 10px 0; }
+
+.carrot {
+	float: right;
+	-moz-border-radius:5px;
+	-webkit-border-radius: 5px;
+	background:none repeat scroll 0 0 #444444;
+	border:1px solid #222222;
+	padding: 0 6px;
+}
+
+.carrot a:hover {
+	background: #888;
+	color: #fff;
+}
+
+#screenimg {
+	display: block;
+	float: left;
+	width: 710px;
+}
+
+table.tableimg { margin: 0 auto; }
+
+.thumb_links img {
+	display: block;
+	margin: 0 auto;
+}
+
+.imageindex { float: left; }
+
+/* login and sign up form */
+
+#login {
+	float:left;
+	margin:0 0 15px;
+	width:492px;
+}
+
+#login p {
+	font-size: 1.2em;
+	line-height: 1.3em;
+	margin: 10px 0 0;
+}
+
+.login_form, .signup_form {
+	font-size: 1.2em;
+	margin: 10px 0;
+}
+
+.login_form, .signup_form input {
+	-moz-border-radius:3px;
+	-webkit-border-radius: 3px;
+	border:1px solid #1C1C1C;
+	margin:5px;
+	padding:5px;
+}
+
+.signup_form h2 {
+	font-size: 1.4em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+/* search tips */
+
+.search_tips {
+	font-size: 1.2em;
+	margin: 22px 0;
+}
+
+.search_tips p {
+	font-size: 1em;
+	margin: 5px 0;
+}
+
+.search_tips blockquote {
+	font-family:"Courier New", sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+table.input {
+	margin: 8px 0;
+}
+
+table.input th {
+	font-size:1.2em;
+	padding:6px 8px;
+}
+
+table.input td {
+	padding: 8px 0;
+}
+
+.search_result {
+	font-size: 1.2em;
+}
+
+/* [ 08 Social Media ] */
+
+.socialfooter {
+	float: right;
+
+}
+
+
+.socialboxMainGallery {
+	float:right;
+	margin:0 -19px 0 0;
+	width: 300px
+}
+
+.socialboxSingleImg {
+	float: left;
+	margin: 5px 0;
+}
+
+
+/* facebook */
+
+.FBConnectButton_Simple, .FBConnectButton_RTL_Simple {
+    background-image: url("/images/connect_favicon.png");
+    background-repeat: no-repeat;
+    outline: medium none;
+    text-decoration: none;
+}
+.FBConnectButton_RTL_Simple {
+    background-position: right 0;
+}
+.FBConnectButton_Simple .FBConnectButton_Text_Simple {
+    margin: 0 0 0 20px;
+    padding-bottom: 1px;
+}
+.FBConnectButton_RTL_Simple .FBConnectButton_Text_Simple {
+    margin: 0 10px 0 0;
+}
+a.FBConnectButton_Simple:hover .FBConnectButton_Text_Simple, a.FBConnectButton_RTL_Simple:hover .FBConnectButton_Text_Simple, .FBConnectButton_Simple:hover .FBConnectButton_Text_Simple, .FBConnectButton_RTL_Simple:hover .FBConnectButton_Text_Simple {
+    text-decoration: underline;
+}
+.FBConnectButton, .FBConnectButton_RTL {
+    background: url("http://static.ak.fbcdn.net/images/connect_sprite.png") no-repeat scroll 0 0 #29447E;
+    cursor: default;
+    display: inline-block;
+    outline: medium none;
+    padding: 0 0 0 1px;
+    text-decoration: none;
+}
+.FBConnectButton .FBConnectButton_Text, .FBConnectButton_RTL .FBConnectButton_Text {
+    background: url("http://static.ak.fbcdn.net/images/connect_sprite.png") repeat scroll 0 0 #5F78AB;
+    border-bottom: 1px solid #1A356E;
+    border-top: 1px solid #879AC0;
+    color: #FFFFFF;
+    display: block;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-weight: bold;
+    margin: 1px 1px 0 0;
+    padding: 2px 6px 4px;
+    text-shadow: none;
+}
+a.FBConnectButton, a.FBConnectButton_RTL, .FBConnectButton, .FBConnectButton_RTL {
+    text-decoration: none;
+}
+a.FBConnectButton:active .FBConnectButton_Text, a.FBConnectButton_RTL:active .FBConnectButton_Text, .FBConnectButton:active .FBConnectButton_Text, .FBConnectButton_RTL:active .FBConnectButton_Text {
+    background: none repeat scroll 0 0 #4F6AA3;
+    border-bottom: 1px solid #29447E;
+    border-top: 1px solid #45619D;
+    text-shadow: none;
+}
+.FBConnectButton_BigPun, .FBConnectButton_RTL_BigPun {
+    background-position: left -60px;
+    font-size: 24px;
+    line-height: 30px;
+}
+.FBConnectButton_BigPun .FBConnectButton_Text {
+    margin-left: 38px;
+    padding: 3px 8px 3px 12px;
+}
+a.FBConnectButton_BigPun:active {
+    background-position: left -99px;
+}
+.FBConnectButton_RTL_BigPun {
+    background-position: right -268px;
+}
+.FBConnectButton_RTL_BigPun .FBConnectButton_Text {
+    margin-right: 39px;
+    padding: 3px 8px 3px 12px;
+}
+a.FBConnectButton_RTL_BigPun:active {
+    background-position: right -307px;
+}
+.FBConnectButton_Large, .FBConnectButton_RTL_Large {
+    background-position: left -138px;
+    font-size: 13px;
+    line-height: 16px;
+}
+.FBConnectButton_Large .FBConnectButton_Text {
+    margin-left: 24px;
+}
+a.FBConnectButton_Large:active {
+    background-position: left -163px;
+}
+.FBConnectButton_RTL_Large {
+    background-position: right -346px;
+}
+.FBConnectButton_RTL_Large .FBConnectButton_Text {
+    margin-right: 25px;
+}
+a.FBConnectButton_RTL_Large:active {
+    background-position: right -371px;
+}
+.FBConnectButton_Medium, .FBConnectButton_RTL_Medium {
+    background-position: left -188px;
+    font-size: 11px;
+    line-height: 14px;
+}
+.FBConnectButton_Text, .FBConnectButton_Medium .FBConnectButton_Text {
+    margin-left: 21px;
+    padding: 2px 6px 3px;
+}
+a.FBConnectButton_Medium:active {
+    background-position: left -210px;
+}
+.FBConnectButton_RTL_Medium {
+    background-position: right -396px;
+}
+.FBConnectButton_RTL_Text, .FBConnectButton_RTL_Medium .FBConnectButton_Text {
+    margin-right: 22px;
+    padding: 2px 6px 3px;
+}
+a.FBConnectButton_RTL_Medium:active {
+    background-position: right -418px;
+}
+.FBConnectButton_Small, .FBConnectButton_RTL_Small {
+    background-position: left -232px;
+    font-size: 10px;
+    line-height: 10px;
+}
+.FBConnectButton_Small .FBConnectButton_Text {
+    margin-left: 17px;
+    padding: 2px 6px 3px;
+}
+a.FBConnectButton_Small:active, .FBConnectButton_Small:active {
+    background-position: left -250px;
+}
+.FBConnectButton_RTL_Small {
+    background-position: right -440px;
+}
+.FBConnectButton_RTL_Small .FBConnectButton_Text {
+    margin-right: 18px;
+    padding: 2px 6px;
+}
+a.FBConnectButton_RTL_Small:active {
+    background-position: right -458px;
+}
+.FBConnectButton_Inactive {
+    opacity: 0.4;
+}
+.fb_share_count_wrapper {
+    float: left;
+    position: relative;
+}
+.fb_share_count {
+    background: none repeat scroll 0 0 #B0B9EC;
+    color: #333333;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    text-align: center;
+}
+.fb_share_count_inner {
+    background: none repeat scroll 0 0 #E8EBF2;
+    display: block;
+}
+.fb_share_count_right {
+    display: inline-block;
+    margin-left: -1px;
+}
+.fb_share_count_right .fb_share_count_inner {
+    border-bottom: 1px solid #B0B9EC;
+    border-top: 1px solid #E8EBF2;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 10px;
+    margin: 1px 1px 0;
+    padding: 2px 6px 3px;
+}
+.fb_share_count_top {
+    border: 1px solid #B0B9EC;
+    display: block;
+    font-size: 22px;
+    letter-spacing: -1px;
+    line-height: 34px;
+    margin-bottom: 7px;
+}
+.fb_share_count_nub_top {
+    background-image: url("http://static.ak.fbcdn.net/rsrc.php/zU/r/bSOHtKbCGYI.png");
+    background-repeat: no-repeat;
+    border: medium none;
+    display: block;
+    height: 7px;
+    left: 7px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 35px;
+    width: 6px;
+}
+.fb_share_count_nub_right {
+    background-image: url("http://static.ak.fbcdn.net/rsrc.php/zX/r/i_oIVTKMYsL.png");
+    background-position: right 5px;
+    background-repeat: no-repeat;
+    border: medium none;
+    display: inline-block;
+    height: 10px;
+    left: 2px;
+    margin: 0 2px 0 0;
+    padding: 0;
+    position: relative;
+    vertical-align: top;
+    width: 5px;
+    z-index: 10;
+}
+.fb_share_no_count {
+    display: none;
+}
+.fb_share_size_Small .fb_share_count_right .fb_share_count_inner {
+    font-size: 10px;
+}
+.fb_share_size_Medium .fb_share_count_right .fb_share_count_inner {
+    font-size: 11px;
+    letter-spacing: -1px;
+    line-height: 14px;
+    padding: 2px 6px 3px;
+}
+.fb_share_size_Large .fb_share_count_right .fb_share_count_inner {
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    line-height: 16px;
+    padding: 2px 6px 4px;
+}

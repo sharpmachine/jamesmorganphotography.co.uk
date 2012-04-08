@@ -1,0 +1,415 @@
+/*
+Theme Name: James Morgan Photography
+Theme URI: http://www.almost-rosy.com/
+Author: James Morgan, Craig Butcher, Rosy Tsai
+Author URI: http://jamesmorganphotography.co.uk http://craigbutcher.net http://www.almost-rosy.com/
+Description: Theme design by Rosy Tsai, developed by Craig Butcher. Modified for Photoshelter.
+Version: 2.0
+*/
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+:focus {/* remember to define focus styles! */
+	outline: 0;
+}
+body {
+	background: #fff;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {/* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a img {
+	border: 0;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+/* ----------------- Body ------------------ */
+
+body {
+	background: #000 url('images/background.jpg') repeat-x; 
+	color: #c5c5c5;
+	font: 62.5% BauerBodoniStd1Roman;
+	font-weight: normal;
+}
+
+a { text-decoration: none;}
+
+
+/* Construction */
+
+#wrapper {
+	margin: 30px auto;
+	width: 900px;  /* For photoshelter only */
+}
+
+#content { overflow: hidden; margin: 20px 0; width: 960px}
+
+#access { overflow: hidden;}
+
+/* Main Templates */
+
+#site-title {
+	background: url('images/jamesmorgan.png') no-repeat center;
+	height: 29px;
+	margin: 0 auto;
+	width: 388px;	
+}
+
+#site-title a {
+    display: block;
+    height: 26px;
+    text-indent: -9999px;
+    width: 389px;
+}
+
+
+.menu li { padding: 5px;  font-size: 11px; letter-spacing: 2px; float: left; }
+.menu a { 	-moz-transition: all 0.45s ease-in-out;
+	-webkit-transition: all 0.45s ease-in-out;
+	-o-transition: all 0.45s ease-in-out;	
+	transition: all 0.45s ease-in-out;
+}
+.menu a:link, .menu a:visited { color: #c5c5c5; padding: 5px;}
+.menu a:hover { background: #c5c5c5; color: #000;
+	-moz-transition: all 0.45s ease-in-out;
+	-webkit-transition: all 0.45s ease-in-out;
+	-o-transition: all 0.45s ease-in-out;	
+	transition: all 0.45s ease-in-out;
+}
+.current-menu-item a, .current_page_item a { background: #c5c5c5; color: #000 !important; padding: 5px;}
+
+footer { overflow: hidden; width: 633px; margin: 0 auto 20px auto;}
+footer a,footer a:link, footer a:visited { color: #c5c5c5;
+
+	-moz-transition: all 0.45s ease-in-out;
+	-webkit-transition: all 0.45s ease-in-out;
+	-o-transition: all 0.45s ease-in-out;	
+	transition: all 0.45s ease-in-out;
+
+}
+footer a:hover { background: #c5c5c5; color: #000;
+	-moz-transition: all 0.45s ease-in-out;
+	-webkit-transition: all 0.45s ease-in-out;
+	-o-transition: all 0.45s ease-in-out;	
+	transition: all 0.45s ease-in-out;
+
+
+}
+footer p { 
+	font-size: 8px;
+	letter-spacing: 2px;
+	margin: 5px;
+	text-transform: uppercase;
+}
+
+.alignleft { float: left; }
+.alignright { float: right; }
+.alignmiddleLine {padding: 0 0 0 30px; text-align:center; float: left;}
+
+
+
+/* Navigation */
+
+#navigation {
+	clear: both;
+	float: right;
+	width: 638px;
+}
+
+#navbottom {
+	clear: both;
+	float: right;
+	font-size: 15px;
+	width: 100%;
+}
+
+.nav-previous {float: left;}
+.nav-next { float: right;}
+
+.nav-previous a, .nav-next a { color: #c5c5c5;}
+
+/* Top Menu */
+
+#topNav { overflow: hidden; padding: 39px 0 10px 0;
+
+/* temporary fix */
+margin: 0 auto; width: 960px;}
+
+
+.menu-primary-container {
+	overflow: hidden;
+}
+
+.menu-secondary-container {
+	overflow: hidden;
+	float: right;
+
+}
+
+
+/* primary sub menu */
+
+
+#menu-primary, #menu-secondary { overflow: hidden; padding: 5px 0;}
+
+#menu-primary li { padding: 0 15px 0 20px;}
+#menu-secondary li { padding: 0 0 0 40px;}
+
+.menu-primary-sub-menu-container { margin: 0 auto; width: 385px;}
+.menu-secondary-sub-menu-container { margin: 0 auto; width: 515px; }
+
+#menu-primary-sub-menu, #menu-secondary-sub-menu { overflow: hidden;}
+
+
+#menu-secondary-sub-menu li {
+	font-variant: small-caps;
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding: 5px 20px 5px 0;
+	text-align: center;
+	width: 83px;
+}
+
+#menu-secondary-sub-menu li a {	color: #fff; }
+#menu-secondary-sub-menu li a:link, #menu-secondary-sub-menu li a:visited {	color: #fff; }
+#menu-secondary-sub-menu li a:hover { background: #c5c5c5; color: #000;}
+
+#menu-primary-sub-menu li { font-variant: small-caps; padding: 5px 26px 5px 0;}
+
+
+/* edit link */
+
+.edit-link { clear: both; display:block;}
+
+/* iframe */
+
+iframe { display: block; margin: 0 auto; padding: 0 0 10px 0;}
+
+
+
+
+
+
+
+
+/* PhotoShelter */
+
+
+/* [ 07 Photoshelter ] */
+
+/* Bread crumbs */
+.breadcrumb {
+	border-bottom: 1px solid #444;
+	clear:both;
+	font-size:14px;
+	font-variant: small-caps;
+	margin: 4px 0 14px 0;
+	padding: 0 0 10px;
+	width: 300px;
+}
+
+/* Bread Crumbs Anchors */
+.breadcrumb a { color:#c5c5c5; font-size: 15px;}
+.breadcrumb a:link, a:visited { color: #c5c5c5;}
+.breadcrumb a:hover { background: #444; color: #fff; }
+.breadcrumb a:active { background: #fff; color: #444; }
+
+/* Social Media Box for Main Gallery */
+.socialboxMainGallery {
+	float:right;
+	margin:0 -19px 0 0;
+	width: 300px
+}
+
+
+
+.navPhotoshelter {
+	clear:both;
+	font-size: 15px;
+	margin: 0 0 10px 0;
+	overflow: hidden;
+	width:620px;
+}
+
+.navPhotoshelter a { color: #c5c5c5; }
+.navPhotoshelter a:link, .navPhotoshelter a:visited { color: #c5c5c5; }
+.navPhotoshelter a:hover { background: #c5c5c5; color: #000;}
+.navPhotoshelter a:active { background: #fff; color: #444;}
+
+/* Photo Essays */
+
+.gallery_name {
+	border-bottom: 1px solid #444444;
+	font-size: 15px;
+	font-variant: small-caps;
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+    width: 250px;
+}
+
+
+/* Display Images in Gallery */
+
+#singles { font-size: 15px;}
+UL.thumbs LI TABLE TD { width: 200px; }
+
+UL.thumbs LI TABLE TD.slide {
+	width: 200px;
+	height: 200px;
+}
+
+
+ul.thumbs {
+	width: 955px;
+	overflow: hidden;
+}
+
+ul.thumbs li {
+	border:1px solid transparent;
+	height:285px;
+	margin: 10px 0;
+    padding: 8px 9px;
+    width:201px;
+	-moz-transition: all 0.45s ease-in-out;
+	-webkit-transition: all 0.45s ease-in-out;
+	-o-transition: all 0.45s ease-in-out;	
+	transition: all 0.45s ease-in-out;
+
+}
+
+ul.thumbs li:hover {
+	background: #1c1c1c;
+	border: 1px solid #222;
+	-moz-transition: all 0.45s ease-in-out;
+	-webkit-transition: all 0.45s ease-in-out;
+	-o-transition: all 0.45s ease-in-out;	
+	transition: all 0.45s ease-in-out;
+
+}
+
+
+.syn { font-size: 15px; font-variant: small-caps; padding: 3px 0 15px 0; }
+
+#strKeyCollapseFull_G_DESCRIPTION1, #strKeyCollapseTrunc_G_DESCRIPTION1 { font-size: 15px; }
+
+a.strCollapse {
+	color: #C5C5C5;
+    display: block;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+    margin: 10px 0;
+    text-align: right;
+    width: 100%;
+}
+
+
+
+/* Single Image Presentation */
+
+#screenimg {
+	display: block;
+	float: left;
+	width: 710px;
+}
+
+#showBox {
+	float:right;
+	font-size:15px;
+	width:235px;
+}
+
+#navPS {
+	float: right;
+	font-size: 15px;
+}
+
+.page_previous, .page_next {
+	color: #c5c5c5;
+}
+
+#galleryContent { margin: 10px 0; }
+
+.add_to_cart_link {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: #444;
+    clear: both;
+    color: #fff;
+    float: left;
+	margin: 50px 0 10px;
+    padding: 7px;
+    text-align: center;
+    width: 129px;
+}
+
+.add_to_cart_link:hover {
+    background: #666;
+}
+
+.add_to_cart_link:active {
+	background: #888;
+}
+
+.socialboxSingleImg {
+	float: left;
+	margin: 50px 0 0;
+}
+
+/* Buy a print */
+
+.buyaprint {
+	padding: 10px 0;
+}
+
+.gallery_list {
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.gallery_list a {
+	color: #C5C5C5;
+}

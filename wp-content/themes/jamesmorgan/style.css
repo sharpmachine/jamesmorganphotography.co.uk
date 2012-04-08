@@ -1,0 +1,829 @@
+/*---[ Details ]---------------------------------------
+Site: jamesmorganphotography.co.uk
+Author: Craig Butcher - http://craigbutcher.net/webtailor
+Date Created: 13/09/2010
+Date Modified: 11/02/2010
+-------------------------------------------------------*/
+
+/* Guide
+ *
+ * [ 00 - Reset ]
+ * [ 01 - Body ]
+ * [ 02 - Construction ]
+ * [ 03 Headers, paragraphs ] 
+ * [ 04 Anchors ]
+ * [ 05 Listings ]
+ * [ 06 Misc ]
+ *
+ * - CSS request from jQuery -
+ * [ 07 jScrollPane ]
+ * [ 08 Nivo Slider ]
+*/
+
+/* [ 00 Reset ] */
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+focus {outline: 0;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+/* [ 01 Body ] */
+
+body {
+	font: 62.5% "Lucida Grande", Tahoma, Arial, georgia, sans-serif;
+	background: url(images/back-grad.gif) repeat-x #000;
+	color: #aaa;
+}
+
+/* [ 02 Construction ] */
+
+/* Main construction */
+
+#wrapper {
+	margin: 30px auto 20px auto;
+	width: 960px;
+}
+
+#header {
+	overflow: hidden;
+	margin: 0 0 20px;
+}
+
+#content {
+	overflow: hidden;
+	position: relative;
+}
+
+#box { float: left; }
+
+.homeLink {
+	display: block;
+    height: 44px;
+    position: relative;
+    width: 395px
+}
+
+#navportfolio {
+	margin: 20px 0;
+	width: 600px;
+}
+
+#links { display: inline; }
+
+#nav {
+	float: right;
+	width: 305px;
+	[if SafMob]width: 350px;
+	margin: 71px 0px 0;
+}
+
+#about {
+	clear:both;
+	margin:15px 0;
+	width:336px;
+}
+
+
+#slider_box {
+	background: #000;
+	height: 705px;
+	margin-top: -1141px;
+	opacity:0.85;
+	filter:alpha(opacity=85);
+	position: absolute;	
+	width: 960px;
+}
+
+#sliderContent {
+	background:#ffffcc;
+	color:#333;	
+	margin: 50px 0 0 50px;
+	position: absolute;
+	font-weight:bold;
+	padding: 10px;
+}
+
+#openCloseWrap {
+	-moz-border-radius:5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	border:1px solid #333;
+	float:right;
+	width: 126px;
+	clear: right;
+[if IE 7]margin: 20px 0 0 0;
+}
+
+.clients {
+	border-left:1px solid;
+	border-top:1px solid;
+	margin:10px 11px 0 0;
+	overflow:hidden;
+}
+
+#slideshow {
+	display: block;
+	margin: 10px auto 25px auto;
+}
+
+#footer {
+	margin: 20px 0;
+	overflow: hidden;
+
+}
+
+/* Singles page */
+
+.singlesImg {
+	float:left;
+	height:235px;
+	padding: 50px 18px 18px 18px;
+	width:200px;
+	position: relative;
+	margin: 1px;
+	border: 1px solid transparent;
+}
+
+.singlesImg:hover {
+	background: #1c1c1c;
+	border: 1px solid #222;
+}
+
+/* multimedia box */
+
+#content_description {
+	float: left;
+	width: 600px;
+	margin-top: 20px;	
+}
+
+/* social media box */
+
+.socialmedia {
+    float: left;
+    margin: 3px 0 0 67px;
+    width: 142px;
+}
+
+#socialmedia {
+	float: right;
+	width: 230px;
+	margin-top: 20px;
+}
+
+#socialmedia h1 {
+	font-family: arial;
+	font-size: 1.7em;
+	font-weight: bold;
+}
+
+.trap {
+	padding: 10px 0 0 0;
+	overflow: hidden;
+}
+
+/* content and social media */
+
+#content_description, #socialmedia p {
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+.socialfooter {
+
+	float: right;
+	overflow: hidden;
+	width: 133px;
+}
+
+
+#capturebox { overflow: hidden; }
+
+#textbox {
+	float: left;
+	width: 243px;
+	letter-spacing: 1px;
+}
+
+#bio {
+	float:left;
+	margin:0 0 15px;
+	width:492px;
+}
+
+#awards {
+	float: right;
+	width: 445px;
+}
+
+#mobile {
+	background: #1C1C1C;
+	border:1px solid #222222;
+	float:right;
+	padding:10px;
+	width:423px;
+	margin: 0 0 10px 0;
+}
+
+
+#clients {
+	clear: both;
+	display: block;
+	padding: 20px 0 0 0;
+}
+
+.cover {
+	position: absolute;
+	background: #000;
+	opacity:0.85;
+	filter:alpha(opacity=85);
+	font-size: 1.2em;
+	width: 100%;
+}
+
+.breadcrumb {
+	clear:both;
+	float:left;
+	font-size:1.4em;
+	text-transform:uppercase;
+	margin: 4px 0 14px 0;
+	width: 600px;
+}
+
+#pane{
+	height: 600px;
+	width: 600px;
+	margin: 20px auto;
+
+}
+
+#controls {
+	font-size: 2em;
+	margin: 5px 0;
+}
+
+.bc {
+	font-size: 1.4em;
+	margin-bottom: 20px;
+}
+
+
+
+/* [ 03 Headers, paragraphs, texts ] */
+
+#box h1 {
+	background: url('images/jamesmorgan.png') no-repeat;
+	text-indent: -99999px;
+	height: 41px;
+	width: 435px;
+	margin: 10px 0 0 0;
+	opacity: 0.7;
+	filter:alpha(opacity=0.7);
+}
+
+#content h2 {
+	font-size: 1.4em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#content_description h1 {
+	font-family: Arial;
+	font-size: 2em;
+	margin: 0 0 10px;
+}
+
+.singlesImg h3 {
+	bottom:50px;
+	left:0;
+	position:absolute;
+	text-align:center;
+	text-transform:uppercase;
+	width:100%;
+}
+
+#footer p {
+	font-size: 1em;
+	float: left;
+	margin: 3px 0;
+}
+
+#content_description p { margin: 0 0 10px; }
+
+.navigation p {
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin: 0 0 5px;
+}
+
+#bio p {
+	font-size: 1.4em;
+	line-height: 1.3em;
+	margin: 10px 0 0;
+}
+
+#bio h2, #awards h2, #clients h2 {font-weight: bold;}
+
+#pane p {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	margin-right: 8px;
+}
+
+#pane h2 {
+	font-size: 2em;
+	margin-bottom: 10px;
+
+}
+
+#pane p {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	margin-right: 8px;
+}
+
+#mobile strong {
+	background: #444;
+	color: #fff;
+	padding: 5px;
+}
+
+
+/* [ 04 Anchors ] */
+
+#header a { padding: 0 }
+#header a:hover { background: none;  }
+
+a {
+	text-decoration: none;
+	outline: none;
+	color: #aaa;
+}
+
+#navportfolio a { padding:4px 4px 4px 7px; letter-spacing: 1px;}
+#navportfolio a:link, a:visit { color: #aaa;}
+#navportfolio a:hover { background: #444; color: #fff;}
+#navportfolio a:active { color: #444; background: #fff;}
+
+#nav a { color:#aaa;}
+#nav a { padding: 4px; letter-spacing: 1px;}
+#nav a:link, a:visit { color: #aaa;}
+#nav a:hover { background: #444; color: #fff; }
+#nav a:active { color: #444; background: #fff;}
+
+.navigation a { color:#aaa;}
+.navigation a {  letter-spacing: 1px;}
+.navigation a:link, a:visit { color: #aaa;}
+.navigation a:hover { background: #444; color: #fff; }
+.navigation a:active { color: #444; background: #fff;}
+
+.breadcrumb a { color:#aaa;text-decoration: underline; }
+.breadcrumb a:link, a:visit { color: #aaa;}
+.breadcrumb a:hover { background: #444; color: #fff; }
+
+
+a.galleryLink { color: #aaa; }
+a.galleryLink:link { color: #aaa; }
+a.galleryLink:visit { color: #aaa; }
+a.galleryLink:hover { 	text-decoration: underline; }
+
+#about a { color:#aaa;}
+#about a { letter-spacing: 1px;}
+#about a:link, a:visit { color: #aaa;}
+#about a:hover { background: #444; color: #fff; }
+#about a:active { color:#444; background: #fff; }
+
+
+.interviews_link a {
+	text-decoration: underline;	
+}
+
+
+.clients li a {
+	width: 200px;
+	height: 200px;
+}
+
+.clients li a:hover {
+	opacity: 1;
+	filter:alpha(opacity=1);
+}
+
+
+#openCloseWrap a {
+	display: block;
+	font-size:1.4em;
+	text-align:center;
+	padding:2px 7px;
+}
+
+#openCloseWrap a:link, a:visit {color: #aaa; }
+
+#openCloseWrap a:hover {
+	-moz-border-radius:5px;
+	-webkit-border-radius: 5px;
+	background: #333;
+	border-radius: 5px;
+	color: #fff;
+	padding:2px 7px;
+}
+
+#openCloseWrap a:active {
+	color:#fff;
+	background: #888;
+}
+
+#controls a { color: #888; }
+
+
+
+/* [ 05 Listing ] */
+
+#navportfolio li {
+	font-size: 1em;
+	text-transform: uppercase;
+	display: inline;
+	padding: 0 15px -15px 0;
+}
+
+#links li {
+	border-right: 1px solid #aaa;
+	margin: 0 10px 0 0;
+	padding: 0 10px 0 0;	
+}
+
+#links li:last-child {border: none;}
+
+#nav li {
+	display: inline;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: 0 0 0 17px;
+}
+
+#about li {
+	display:block;
+	float:left;
+	font-size:1.2em;
+	margin:0 12px 0 0;
+}
+
+.clients li {
+	background:none repeat scroll 0 0 #FFFFFF;
+	border-bottom:1px solid;
+	border-right:1px solid;
+	float:left;
+	height:100px;
+	width:157px;
+	opacity: 0.95;
+	filter:alpha(opacity=95);
+}
+
+.clients li:hover {	opacity: 1; filter:alpha(opacity=1); }
+
+.clients li img {
+	display: block;
+	margin: 0 auto;
+}
+
+#awards ul { margin: 0 0 25px;}
+
+#awards li, .interviews_link li {
+	margin: 10px 0 0 12px;
+	font-size: 1.4em;
+	list-style: outside;
+}
+
+
+#mobile ul {
+	list-style: none;
+}
+
+#mobile li {
+	margin: 18px 0;
+	font-size: 1.4em;
+	width: 300px;
+}
+
+
+/* [ 06 Misc ] */
+
+.aligncenter { display: block; margin: 0 20px;} /* Not sure why or where */
+.contactme { background: #444; color: #fff;}
+ul.thumbs li table td.slide { height:160px; width:200px; }
+.backgroundtile { z-index: -10; }
+.noshow { display: none; }
+.post-meta-key { display: none;}
+.interviews { padding: 25px 0 0;}
+.alignleft { float: left;}
+/* Wordpress */
+
+.edit-link { clear:both; float:left; font-size:2em; } /* Wordpress edit */
+
+/* Video and slideshow settings */
+
+object { margin: 0 auto; display: block; }
+iframe { margin: 0 auto; display: block; height: 630px;}
+
+
+/* [ 07 jScrollPane ] */
+
+.jspContainer {
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane { position: absolute; }
+
+.jspVerticalBar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 13px;
+	height: 100%;
+}
+
+.jspHorizontalBar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspVerticalBar *, .jspHorizontalBar * {
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap { display: none; }
+.jspHorizontalBar .jspCap {	float: left; }
+.jspTrack {	position: relative; }
+.jspDrag {
+	-moz-border-radius:10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: #555;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag {
+	float: left;
+	height: 100%;
+}
+
+.jspArrow {
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled {
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow { height: 16px; }
+
+.jspHorizontalBar .jspArrow {
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus { outline: none; }
+
+.jspCorner {
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+
+/* [ 08 Nivo Slider ]
+ *
+ * jQuery Nivo Slider v2.1
+ * http://nivo.dev7studios.com
+*/
+ 
+ 
+/* The Nivo Slider styles */
+.nivoSlider { position:relative; }
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink, a.nivo-imageLink2 {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:60;
+	display:none;
+}
+
+.nivo-imageLink:hover {
+	background: #000 url('images/play.png') no-repeat center;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+}
+
+.nivo-imageLink {
+	[if SafMob]background: #000 url('images/play.png') no-repeat center;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+}
+
+.nivo-imageLink2:hover {
+	background: #000 url('images/clicktoview.png') no-repeat center;
+	opacity: 0.50;
+	filter:alpha(opacity=50);
+}
+
+.nivo-imageLink2 {
+	[if SafMob]background: #000 url('images/touchtoview.png') no-repeat center;
+	opacity: 0.50;
+	filter:alpha(opacity=50);
+}
+
+/* The slices in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:50;
+	height:100%;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:89;
+}
+
+.nivo-caption p {
+	font-size:1.4em;
+	margin:0;
+	padding:5px;
+}
+
+.nivo-caption a {
+	display:inline !important;
+	color: #aaa;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:99;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:99;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+/*
+ * Note: Include the nivo-slider.css file that comes
+ * with the main download before including this file.
+ */
+
+#slider {
+	position:relative;
+	/*	margin:11px 18px 60px; */
+	margin:7px 2px 60px;
+	background:#202834 url(http://jamesmorganphotography.co.uk/wp-content/themes/jamesmorgan/loading.gif) no-repeat 50% 50%;
+	-moz-box-shadow:0px 0px 10px #333;
+	-webkit-box-shadow:0px 0px 10px #333;
+	box-shadow:0px 0px 10px #333;
+	height: 635px;
+	width: 955px;
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+
+#slider a {
+	border:0;
+}
+
+.nivo-controlNav {
+	position:absolute;
+	left:47%;
+	bottom:-30px;
+}
+.nivo-controlNav a {
+	display:block;
+	width:10px;
+	height:10px;
+	background:url(images/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.nivo-controlNav a.active {
+	background-position:-10px 0;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:32px;
+	height:34px;
+	background:url(images/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+
+a.nivo-nextNav {
+	background: url('images/arrow_next.png') no-repeat right;
+	height:435px;
+	opacity:0.75;
+	filter:alpha(opacity=75);
+	padding:100px 17px 100px 10px;
+	top:0;
+	width:150px;
+}
+
+a.nivo-prevNav {
+	background: url('images/arrow_prev.png') no-repeat left;
+	height:435px;
+	opacity:0.75;
+	filter:alpha(opacity=75);
+	padding:100px 17px 100px 10px;
+	top:0;
+	width:150px;
+}
+
+#slider .nivo-controlNav { position:absolute; }
+#slider .nivo-controlNav img {
+	display:inline; /* Unhide the thumbnails */
+	position:relative;
+	margin-right:10px;
+}
+
+#twitter { -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; background: #eceff5; border-radius: 5px; margin: 10px 0 0; overflow: hidden; padding: 0 0 13px; width: 443px}
+#twitter h2 {font-size: 1.4em; font-weight:bold; padding: 10px; text-transform: none;}
+#twitter a:link { color: #3B5998; }
+#twitter img { float: left; margin: 14px 5px 0 15px; }
+#twitter h2 { float: left; line-height: 0px;}
+
+
+/* blog posts ~ imported from Huffington Post */
+
+.blogpost { margin: 0 auto; width: 600px;}
+.blogpost h2 { font-size: 1.8em !important; margin: 0 0 15px;}
+.blogpost li { border-bottom: 1px solid #eee; font-size: 1.2em; margin: 0 0 40px;}
+.blogpost li a { border-bottom: 1px solid #333; }
