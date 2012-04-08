@@ -287,7 +287,6 @@ div.wpcf7 p { font-size: 15px; font-variant: small-caps;}
 	border: none;
 	color: #c5c5c5;
 	cursor: pointer;
-	float: right;
 	font-family: BauerBodoniStd1Roman;
 	font-size: 15px;
 	font-variant: small-caps;
@@ -298,7 +297,6 @@ div.wpcf7 p { font-size: 15px; font-variant: small-caps;}
 .wpcf7-submit:hover {
 	background: #ddd;
 	color: #000;
-
 }
 
 /* contact form */
@@ -433,6 +431,7 @@ div.wpcf7 p { font-size: 15px; font-variant: small-caps;}
 	text-align: center;
 	letter-spacing: 1px;
 	padding: 0 0 15px;
+	min-height: 72px;
 }
 
 .entry-title a, .entry-title a:link, .entry-title a:visited { color: #c5c5c5;}
@@ -651,7 +650,24 @@ margin: 0 auto; width: 960px;
 iframe { display: block; margin: 0 auto; padding: 0 0 10px 0;}
 
 
+a.pdf-download
+{
+	background: none;
+border: none;
+color: #C5C5C5;
+cursor: pointer;
+font-family: BauerBodoniStd1Roman;
+font-size: 15px;
+font-variant: small-caps;
+text-align: right;
+margin: 0 5px 0 0;
+text-decoration: none;
+}
 
+a.pdf-download:hover {
+	background: #ddd;
+	color: #000;
+}
 
 
 
@@ -793,7 +809,7 @@ left: 0;
 			
 			.horizontal-only
 			{
-				height: 590px;
+				height:650px;
 
 			}
 

@@ -591,3 +591,14 @@ function twentyeleven_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'twentyeleven_body_classes' );
 
+//Custom logo should be 20 x 20
+function custom_logo() {
+  echo '<style type="text/css">
+	#cpt_info_box {
+		display: none !important; /* Hides Custom Post Type info box */
+	}
+    </style>';
+}
+
+add_action('admin_head', 'custom_logo');
+

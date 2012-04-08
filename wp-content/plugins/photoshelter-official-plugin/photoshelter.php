@@ -361,13 +361,6 @@ function add_photoshelter_button() {
 	echo "<a href=\"{$iframe_src}&amp;TB_iframe=true&amp;height=500&amp;width=640\" class=\"thickbox\" title=\"$title\"><img src=\"{$pluginURI}/img/icon.gif\" alt=\"$title\" /></a>";	
 }
 
-// Remove Update Notification
-add_filter('site_transient_update_plugins', 'dd_remove_update_nag');
-function dd_remove_update_nag($value) {
- unset($value->response[ plugin_basename(__FILE__) ]);
- return $value;
-}
-
 include_once( WP_PLUGIN_DIR . '/photoshelter-official-plugin/photoshelter_client.php');
 
 $GLOBALS['psc'] = new Photoshelter_Client();
