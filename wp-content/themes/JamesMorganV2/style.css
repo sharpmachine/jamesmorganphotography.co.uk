@@ -428,6 +428,7 @@ div.wpcf7 p { font-size: 15px; font-variant: small-caps;}
 	font-size: 30px;
 	font-family: LeagueGothicRegular;
 	font-weight: normal;
+	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 1px;
 	padding: 0 0 15px;
