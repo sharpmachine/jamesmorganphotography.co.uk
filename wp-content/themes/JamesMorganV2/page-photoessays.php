@@ -14,7 +14,7 @@ get_header(); ?>
 
 <section id="content" role="main">
 	<div class="scroll-pane horizontal-only">
-		<div id="container" style="width: 2135px;">
+		<div id="container">
 	
 				<?php query_posts("post_type=photo_essay"); ?>
 				<?php if (have_posts()) : ?>
@@ -45,7 +45,7 @@ get_header(); ?>
 			
 		</div><!-- #container -->
 	</div><!-- #scrollbar -->
-	<p>Use the scrollbar above to see more essays</p>
+	<p class="scroll-notice"><span>&larr;</span> Use the scrollbar above to see more essays <span>&rarr;</span></p>
 
 </section><!-- #primary -->
 <?php get_footer(); ?>

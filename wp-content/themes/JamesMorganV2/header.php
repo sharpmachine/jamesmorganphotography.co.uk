@@ -51,7 +51,7 @@
 ?>
 
 
-
+<script src="<?php bloginfo('template_directory'); ?>/js/scripts.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" src="http://jamesmorganphotography.co.uk/wp-content/themes/JamesMorganV2/js/jquery.jscrollpane.min.js"></script>
 <script type="text/javascript" src="http://jamesmorganphotography.co.uk/wp-content/themes/JamesMorganV2/js/jquery.mousewheel.js"></script>
 
