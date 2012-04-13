@@ -17,7 +17,7 @@ get_header(); ?>
 		</div><!-- .entry-content -->
 
 
-			<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
+	
 
 	</article><!-- #post-<?php the_ID(); ?> -->
 

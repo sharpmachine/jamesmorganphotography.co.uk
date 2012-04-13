@@ -55,6 +55,7 @@
 <script type="text/javascript" src="http://jamesmorganphotography.co.uk/wp-content/themes/JamesMorganV2/js/jquery.jscrollpane.min.js"></script>
 <script type="text/javascript" src="http://jamesmorganphotography.co.uk/wp-content/themes/JamesMorganV2/js/jquery.mousewheel.js"></script>
 
+
 <script>
 	var $ = jQuery.noConflict();
 	

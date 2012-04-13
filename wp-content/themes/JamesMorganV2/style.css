@@ -832,3 +832,14 @@ p.scroll-notice span
 .contactme-text {
 	margin: 0; padding: 0 !important; text-decoration: underline;
 }
+
+article.post-948
+{
+	margin: 0px !important;
+}
+
+article.post-948 h1.entry-title,
+article.post-948 footer.entry-meta
+{
+	display: none;
+}

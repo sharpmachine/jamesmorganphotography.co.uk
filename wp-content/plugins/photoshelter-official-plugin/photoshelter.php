@@ -9,6 +9,13 @@ Version: 1.2
 License: GPLv2 - http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+// Remove Update Notification
+add_filter('site_transient_update_plugins', 'dd_remove_update_nag');
+function dd_remove_update_nag($value) {
+ unset($value->response[ plugin_basename(__FILE__) ]);
+ return $value;
+}
+
 register_activation_hook(__FILE__, 'photoshelter_activate');
 
 add_shortcode('photoshelter-gallery', 'photoshelter_gallery_handler');
