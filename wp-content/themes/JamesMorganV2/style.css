@@ -620,9 +620,12 @@ margin: 0 auto; width: 960px;
 #menu-primary li { padding: 0 15px 0 20px;}
 #menu-secondary li { padding: 0 0 0 40px;}
 
-.menu-primary-sub-menu-container,
-.menu-multimedia-container
+.menu-primary-sub-menu-container
 { margin: 0 auto; width: 380px; text-transform: uppercase;}
+
+.menu-multimedia-container
+{ margin: 0 auto; width: 300px; text-transform: uppercase;}
+
 .menu-secondary-sub-menu-container { margin: 0 auto; width: 515px; }
 
 #menu-primary-sub-menu, #menu-secondary-sub-menu { overflow: hidden;}
