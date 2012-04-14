@@ -620,7 +620,9 @@ margin: 0 auto; width: 960px;
 #menu-primary li { padding: 0 15px 0 20px;}
 #menu-secondary li { padding: 0 0 0 40px;}
 
-.menu-primary-sub-menu-container { margin: 0 auto; width: 380px;}
+.menu-primary-sub-menu-container,
+.menu-multimedia-container
+{ margin: 0 auto; width: 380px; text-transform: uppercase;}
 .menu-secondary-sub-menu-container { margin: 0 auto; width: 515px; }
 
 #menu-primary-sub-menu, #menu-secondary-sub-menu { overflow: hidden;}
@@ -833,13 +835,27 @@ p.scroll-notice span
 	margin: 0; padding: 0 !important; text-decoration: underline;
 }
 
-article.post-948
+article.post-948,
+article.post-959,
+article.post-957
 {
 	margin: 0px !important;
 }
 
 article.post-948 h1.entry-title,
 article.post-948 footer.entry-meta
+{
+	display: none;
+}
+
+article.post-959 h1.entry-title,
+article.post-959 footer.entry-meta
+{
+	display: none;
+}
+
+article.post-957 h1.entry-title,
+article.post-957 footer.entry-meta
 {
 	display: none;
 }
