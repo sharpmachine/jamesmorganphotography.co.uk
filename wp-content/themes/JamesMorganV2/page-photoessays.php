@@ -30,7 +30,7 @@ get_header(); ?>
 					<a href="<?php the_field('photoshelter_link'); ?>"><?php the_title(); ?></a>
 				</h1>
 				<div class="entry-blog-rss">
-					<?php the_content(); ?>
+					<?php the_excerpt(); ?>
 					<?php if(get_field('essay_pdf')): ?>
 						<a href="<?php the_field('essay_pdf'); ?>" class="pdf-download">Download PDF</a>
 					<?php endif; ?>

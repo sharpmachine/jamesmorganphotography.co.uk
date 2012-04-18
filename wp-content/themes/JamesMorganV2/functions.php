@@ -324,7 +324,7 @@ add_filter( 'excerpt_length', 'twentyeleven_excerpt_length' );
  * Returns a "Continue Reading" link for excerpts
  */
 function twentyeleven_continue_reading_link() {
-	return ' <a href="'. esc_url( get_permalink() ) . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) . '</a>';
+	return ' <a href="'. esc_url( get_permalink() ) . '">' . __( '', 'twentyeleven' ) . '</a>';
 }
 
 /**
@@ -601,4 +601,14 @@ function custom_logo() {
 }
 
 add_action('admin_head', 'custom_logo');
+
+
+function limit_words($string, $word_limit) {
+
+	$words = explode(' ', $string);
+
+	return implode(' ', array_slice($words, 0, $word_limit));
+
+}
+
 

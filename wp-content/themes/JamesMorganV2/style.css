@@ -421,7 +421,12 @@ div.wpcf7 p { font-size: 15px; font-variant: small-caps;}
 
 .photoessayshorts div.entry-content p {
 	font-size: 16px;
+	min-height: 155px;
 
+}
+
+.photoessayshorts p {
+	min-height: 155px;
 }
 
 .photoessayshorts h1.entry-title {
@@ -660,7 +665,7 @@ a.pdf-download
 {
 	background: none;
 border: none;
-color: #C5C5C5;
+color: red;
 cursor: pointer;
 font-family: BauerBodoniStd1Roman;
 font-size: 15px;
@@ -828,7 +833,7 @@ p.scroll-notice span
 			
 			.horizontal-only
 			{
-				height:650px;
+				height:550px;
 
 			}
 
